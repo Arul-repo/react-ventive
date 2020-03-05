@@ -1,0 +1,79 @@
+@import "variables";
+
+#root{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: auto;
+    color: $white;
+    font-family: 'Poppins', sans-serif;
+    @media #{$tablet}{
+        width:100%;
+    }
+    @media #{$desktop}{
+        width:100%;
+    }
+    @media #{$largeScreen} {
+        width: 1600px;
+    }
+    aside{
+        background: $blueBG;
+        display: flex;
+        flex-direction: column;
+        @media #{$tablet}{
+            width: 30%;
+            height: 750px;
+        }
+        @media #{$mobile}{
+            width: 100%;
+            height: auto;
+            padding-bottom: 30px;
+        }
+        @media #{$desktop}{
+            width:100%;
+            height: 100vh;
+        }
+        @media #{$largeScreen} {
+            width: 25%;
+            padding-top: 2%;
+            height: 100vh;
+        }
+        
+    }
+    .rightSide{
+        width: 75%;
+        display: flex;
+        padding-top: 1%;
+        padding-left: 5%;
+        @media #{$tablet}{
+            width: 70%;
+            margin-top: 30px;
+        }
+        @media #{$mobile}{
+            width: 100%;
+        }
+        @media #{$desktop}{
+            width:100%;
+        }
+        @media #{$largeScreen} {
+            
+        }
+        h2.docTitle{
+            @media #{$tablet}{
+                padding-left: 15px;
+            }
+            color: $HeadingText;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 54px;
+            margin-bottom: 50px;
+            &:before{
+                content: url("../Assets/Group-large.png");
+                padding-right: 25px;
+                position: relative;
+                top: 12px;
+            }
+        }
+    }
+}
